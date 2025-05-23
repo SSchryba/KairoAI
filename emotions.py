@@ -1,4 +1,4 @@
-import random
+from emotions import Emotions
 
 class Emotions:
     def __init__(self):
