@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from core.memory import Memory
+from memory import Memory
 from core.decision_engine import DecisionEngine
 
 app = Flask(__name__)
