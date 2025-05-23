@@ -1,0 +1,11 @@
+from core.memory import Memory
+from core.decision_engine import DecisionEngine
+
+def launch_core():
+    memory = Memory()
+    brain = DecisionEngine(memory)
+
+    while True:
+        input_data = input(">> ")
+        response = brain.process(input_data)
+        print(response)
