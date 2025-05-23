@@ -1,4 +1,4 @@
-from models.nlp_processor import NLPProcessor
+from nlp_processor import NLPProcessor
 
 class DecisionEngine:
     def __init__(self, memory):
