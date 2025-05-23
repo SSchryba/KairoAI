@@ -5,5 +5,5 @@ class Memory:
     def remember(self, data):
         self.store.append(data)
 
-    def recall(self, query=None):
-        return self.store[-1] if self.store else "Nothing remembered yet."
+    def recall(self, count=None):
+        return self.store if count is None else self.store[-count:]
