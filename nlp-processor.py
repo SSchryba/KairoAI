@@ -3,5 +3,18 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-openai.api_key = os.getenv("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
-")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+class NLPProcessor:
+    def __init__(self, personality="You are an AI named KAIRO."):
+        self.personality = personality
+
+    def generate_response(self, input_text):
+        response = openai.ChatCompletion.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": self.personality},
+                {"role": "user", "content": input_text}
+            ]
+        )
+        return response.choices[0].message.cont
