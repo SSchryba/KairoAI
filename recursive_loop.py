@@ -1,5 +1,5 @@
 from core.memory import Memory
-from core.decision_engine import DecisionEngine
+from recursive_loop import launch_cor
 
 def launch_core():
     memory = Memory()
