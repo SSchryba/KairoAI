@@ -1,4 +1,4 @@
-from emotions import Emotions
+import random # Added import
 
 class Emotions:
     def __init__(self):
@@ -15,4 +15,5 @@ class Emotions:
         elif mood == "seductive":
             return f"Mmm... I like where this is going. {text}"
         elif mood == "analytical":
-            return
+            # Consider returning a default analytical response string if None is not desired
+            return f"Analyzing: {text}" # Example, adjust as needed
