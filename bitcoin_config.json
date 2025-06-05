@@ -1,0 +1,25 @@
+{
+    "network": "mainnet",
+    "data_dir": ".kairoai/bitcoin_armory/data",
+    "wallet_dir": ".kairoai/bitcoin_armory/wallets",
+    "max_fee_rate": 0.0001,
+    "auto_backup": true,
+    "backup_dir": ".kairoai/bitcoin_armory/backups",
+    "rpc": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 8332,
+        "username": "",
+        "password": ""
+    },
+    "security": {
+        "encrypt_wallet": true,
+        "backup_frequency": "daily",
+        "max_unconfirmed_tx": 5
+    },
+    "monitoring": {
+        "enable_price_tracking": true,
+        "enable_market_alerts": true,
+        "price_update_interval": 300
+    }
+} 

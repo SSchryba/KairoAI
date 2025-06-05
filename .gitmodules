@@ -1,0 +1,3 @@
+[submodule "BitcoinArmory"]
+	path = BitcoinArmory
+	url = https://github.com/SSchryba/BitcoinArmory.git
